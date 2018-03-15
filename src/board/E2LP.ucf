@@ -1,0 +1,52 @@
+
+NET i_clk       LOC = M21  | IOSTANDARD = LVCMOS33;
+NET i_clk TNM_NET = i_clk_pin;
+TIMESPEC TS_i_clk_pin = PERIOD i_clk_pin 24000 kHz;
+
+NET in_rst      LOC = AE24 | IOSTANDARD = LVCMOS33 | TIG;
+
+
+NET o_vga_clk   LOC = C14  | IOSTANDARD = LVTTL;
+NET on_blank    LOC = B16  | IOSTANDARD = LVTTL;
+NET on_h_sync   LOC = B22  | IOSTANDARD = LVTTL;
+NET on_v_sync   LOC = A22  | IOSTANDARD = LVTTL;
+NET on_sync     LOC = A17  | IOSTANDARD = LVTTL;
+NET on_pow_save LOC = A2   | IOSTANDARD = LVTTL;
+
+NET o_red[0]    LOC = B4   | IOSTANDARD = LVTTL;
+NET o_red[1]    LOC = A4   | IOSTANDARD = LVTTL;
+NET o_red[2]    LOC = A5   | IOSTANDARD = LVTTL;
+NET o_red[3]    LOC = B6   | IOSTANDARD = LVTTL;
+NET o_red[4]    LOC = A6   | IOSTANDARD = LVTTL;
+NET o_red[5]    LOC = A7   | IOSTANDARD = LVTTL;
+NET o_red[6]    LOC = B8   | IOSTANDARD = LVTTL;
+NET o_red[7]    LOC = A8   | IOSTANDARD = LVTTL;
+
+NET o_green[0]  LOC = A9   | IOSTANDARD = LVTTL;
+NET o_green[1]  LOC = A11  | IOSTANDARD = LVTTL;
+NET o_green[2]  LOC = B12  | IOSTANDARD = LVTTL;
+NET o_green[3]  LOC = A12  | IOSTANDARD = LVTTL;
+NET o_green[4]  LOC = N17  | IOSTANDARD = LVTTL;
+NET o_green[5]  LOC = A13  | IOSTANDARD = LVTTL;
+NET o_green[6]  LOC = N18  | IOSTANDARD = LVTTL;
+NET o_green[7]  LOC = A16  | IOSTANDARD = LVTTL;
+
+NET o_blue[0]   LOC = A18  | IOSTANDARD = LVTTL;
+NET o_blue[1]   LOC = B18  | IOSTANDARD = LVTTL;
+NET o_blue[2]   LOC = L17  | IOSTANDARD = LVTTL;
+NET o_blue[3]   LOC = M18  | IOSTANDARD = LVTTL;
+NET o_blue[4]   LOC = C18  | IOSTANDARD = LVTTL;
+NET o_blue[5]   LOC = K18  | IOSTANDARD = LVTTL;
+NET o_blue[6]   LOC = C19  | IOSTANDARD = LVTTL;
+NET o_blue[7]   LOC = C20  | IOSTANDARD = LVTTL;
+
+
+NET i_sw[0]     LOC = W19  | IOSTANDARD = LVCMOS33; # SW_0
+NET i_sw[1]     LOC = Y24  | IOSTANDARD = LVCMOS33; # SW_1
+NET i_sw[2]     LOC = K19  | IOSTANDARD = LVCMOS33; # SW_2
+NET i_sw[3]     LOC = V24  | IOSTANDARD = LVCMOS33; # SW_3
+NET i_sw[4]     LOC = U20  | IOSTANDARD = LVCMOS33; # SW_4
+NET i_sw[5]     LOC = U23  | IOSTANDARD = LVCMOS33; # SW_5
+NET i_sw[6]     LOC = U24  | IOSTANDARD = LVCMOS33; # SW_6
+NET i_sw[7]     LOC = U19  | IOSTANDARD = LVCMOS33; # SW_7
+
